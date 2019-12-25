@@ -34,7 +34,8 @@ public class DataManager {
         if(loadJsonTask!=null){
             loadJsonTask.cancel(true);
         }
-        new LoadJsonTask().execute();
+        loadJsonTask = new LoadJsonTask();
+        loadJsonTask.execute();
     }
 
     private class LoadJsonTask extends AsyncTask<Void, Void, List<Item> > {
