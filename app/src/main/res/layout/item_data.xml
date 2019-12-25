@@ -1,0 +1,56 @@
+<RelativeLayout android:layout_width="200dp"
+    android:layout_height="330dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <androidx.cardview.widget.CardView
+        app:cardCornerRadius="10dp"
+        android:layout_margin="10dp"
+        app:cardElevation="3dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:scaleType="centerCrop"
+                android:id="@+id/img_data"
+                android:layout_width="match_parent"
+                android:layout_height="210dp"/>
+            <TextView
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:textStyle="bold"
+                android:id="@+id/tv_nameData"
+                android:textSize="17sp"
+                android:textColor="#000"
+                android:layout_marginTop="7dp"
+                android:text="Trà sữa Olong"
+                android:layout_marginLeft="7dp"
+                android:layout_below="@id/img_data"
+                android:layout_width="wrap_content"
+                android:layout_height="22dp"/>
+            <ImageView
+                android:id="@+id/img_space"
+                android:layout_marginTop="20dp"
+                android:background="#C7BCBC"
+                android:layout_below="@id/tv_nameData"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+            <TextView
+                android:textStyle="bold"
+                android:id="@+id/tv_price"
+                android:textSize="17sp"
+                android:textColor="#000"
+                android:layout_marginLeft="7dp"
+                android:text="59.000đ"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/img_space"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
